@@ -206,7 +206,7 @@ export function Home() {
                                             passion:
                                         </span>{" "}
                                         <span className="text-[#27C93F]">
-                                            "Building beautiful UIs"
+                                            "Crafting beautiful UIs and high-performance applications"
                                         </span>
                                         ,{"\n"}
                                         {"  "}
