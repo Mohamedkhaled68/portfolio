@@ -4,11 +4,7 @@ import emailjs from "@emailjs/browser";
 import { SectionReveal } from "../components/SectionReveal";
 import { Send, Mail, Github, Linkedin } from "lucide-react";
 
-emailjs.init("AiXDs62j4ZEY2I8lF");
-
-const EMAIL_SERVICE_ID = "service_94caakg";
-const EMAIL_TEMPLATE_ID = "template_5gkxd78";
-const RECIPIENT_EMAIL = "mohamed.khaled6083@gmail.com";
+emailjs.init(import.meta.env.VITE_EMAIL_USER_ID!);
 
 export function Contact() {
     const [submitted, setSubmitted] = useState(false);
@@ -77,8 +73,10 @@ export function Contact() {
                                         };
 
                                         await emailjs.send(
-                                            EMAIL_SERVICE_ID,
-                                            EMAIL_TEMPLATE_ID,
+                                            import.meta.env
+                                                .VITE_EMAIL_SERVICE_ID!,
+                                            import.meta.env
+                                                .VITE_EMAIL_TEMPLATE_ID!,
                                             templateParams,
                                         );
 
@@ -222,7 +220,7 @@ export function Contact() {
                                 {
                                     icon: Mail,
                                     label: "Email",
-                                    href: `mailto:${RECIPIENT_EMAIL}`,
+                                    href: `mailto:${import.meta.env.VITE_RECIPIENT_EMAIL}`,
                                 },
                                 {
                                     icon: Github,
