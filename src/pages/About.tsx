@@ -51,10 +51,12 @@ export function About() {
                                 lineHeight: 1.8,
                             }}
                         >
-                            Front-End Developer with a passion for building
-                            beautiful and scalable web experiences. I specialize
-                            in creating high-performance interfaces that bridge
-                            the gap between design and engineering.
+                            Front-End Developer focused on crafting scalable,
+                            high-performance web applications with clean
+                            architecture and thoughtful user experiences. I
+                            enjoy turning complex problems into simple,
+                            intuitive interfaces that feel fast, accessible, and
+                            visually refined.
                         </p>
                         <p
                             className="text-[#9CA3AF]"
@@ -64,11 +66,13 @@ export function About() {
                                 lineHeight: 1.8,
                             }}
                         >
-                            With over 3 years of experience working with
-                            companies like Vercel, Stripe, and Shopify, I've
-                            developed a deep understanding of what makes great
-                            user experiences. I believe in clean code,
-                            thoughtful design, and continuous learning.
+                            Over the past 3+ years, I’ve worked on a range of
+                            real-world products across different domains — from
+                            hiring platforms and educational tools to e-commerce
+                            and digital experiences — contributing to both
+                            startups and production-level systems where
+                            performance, usability, and maintainability are key
+                            priorities.
                         </p>
                     </motion.div>
                     <motion.div
