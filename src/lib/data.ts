@@ -8,7 +8,7 @@ export const projects = [
             "Talent hiring platform connecting creatives with organizations",
         image: "/images/donatella/donatella-1.png",
         tags: ["React", "Vite", "Tailwind CSS", "i18n"],
-        role: "Full-Stack Developer",
+        role: "Front-End Developer",
         problem:
             "Creative talents had no dedicated space to present their work to serious organizations, and companies lacked a focused platform to discover and hire vetted creative professionals beyond generic job boards.",
         results: [
@@ -16,6 +16,7 @@ export const projects = [
             "Bilingual (EN/AR) launch from day one",
             "Sub-1.5s page load time",
         ],
+        timeline: "6 months",
     },
 
     ,
@@ -27,7 +28,7 @@ export const projects = [
         shortDesc: "Bilingual UX learning resource for beginners",
         image: "/images/learn2ux/learn2ux-1.png",
         tags: ["React", "Next.js", "Tailwind CSS", "i18n"],
-        role: "Front-End Developer",
+        role: "Full-Stack Developer",
         problem:
             "Arabic-speaking UX beginners had no localized, structured resource to guide them through the field. Existing platforms were English-only, scattered, and overwhelming for newcomers.",
         results: [
@@ -35,6 +36,7 @@ export const projects = [
             "Fully bilingual AR/EN experience",
             "Growing community of design learners",
         ],
+        timeline: "2 months",
     },
 
     {
@@ -45,7 +47,7 @@ export const projects = [
         shortDesc: "Personalized children's storybook platform",
         image: "/images/amen/amen-1.png",
         tags: ["Next.js", "Vercel", "Tailwind CSS", "E-Commerce"],
-        role: "Full-Stack Developer",
+        role: "Front-End Developer",
         problem:
             "Parents wanted meaningful, personalized reading experiences for their children but couldn't find a platform that combined customization, quality illustration, and easy purchasing in one place.",
         results: [
@@ -53,6 +55,7 @@ export const projects = [
             "Multi-language support (EN + AR)",
             "Seamless story personalization flow",
         ],
+        timeline: "7 months",
     },
 
     {
@@ -62,7 +65,13 @@ export const projects = [
             "Masar is Oman's first dedicated teacher recruitment platform, built to connect distinguished educators with leading schools across the Sultanate. The platform serves both teachers — helping them find ideal career opportunities — and schools — giving them fast access to verified, qualified talent. With 500+ partner schools, 2000+ registered teachers, and a 95% placement rate, Masar has become the go-to hiring destination in the education sector.",
         shortDesc: "Oman's #1 teacher-school recruitment platform",
         image: "/images/masar/masar-1.png",
-        tags: ["Next.js", "Tailwind CSS", "PostgreSQL", "Arabic RTL"],
+        tags: [
+            "Next.js",
+            "Tailwind CSS",
+            "Express.js",
+            "MongoDB",
+            "Arabic RTL",
+        ],
         role: "Full-Stack Developer",
         problem:
             "Omani schools struggled to find qualified teachers efficiently, while educators had no centralized, trustworthy platform to discover and apply for opportunities in top institutions.",
@@ -71,6 +80,7 @@ export const projects = [
             "2,000+ registered educators",
             "500+ partner schools onboarded",
         ],
+        timeline: "2 months",
     },
 
     {
@@ -80,8 +90,8 @@ export const projects = [
             "A minimalist and elegant online gallery for German artist Antje Krüger, showcasing her original fine art works — primarily mixed-media pieces on canvas. The site presents her portfolio in a clean, gallery-style layout with individual work pages, detailed dimensions and medium info, a curated gallery view, an about section, and a direct contact link — giving collectors and admirers an intimate digital encounter with her art.",
         shortDesc: "Fine art portfolio & gallery for visual artist",
         image: "/images/antje-k/antje-1.png",
-        tags: ["React", "Wix Studio", "CSS", "Portfolio"],
-        role: "Web Designer & Developer",
+        tags: ["React", "Next.js", "Tailwind CSS", "Portfolio"],
+        role: "Front-End Developer",
         problem:
             "The artist needed a refined digital presence that put her artwork front and center without distraction — something that felt like a real gallery visit, not a generic website template.",
         results: [
@@ -89,6 +99,7 @@ export const projects = [
             "Direct collector inquiries via contact page",
             "Full artwork catalog with dimensions & medium",
         ],
+        timeline: "1 month",
     },
 ];
 

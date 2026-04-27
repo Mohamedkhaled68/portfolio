@@ -25,13 +25,13 @@ export function Projects() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {projects.map((project, i) => (
-              <SectionReveal key={project.id} delay={i * 0.08}>
-                <Link to={`/projects/${project.id}`} className="group block">
+              <SectionReveal key={project?.id} delay={i * 0.08}>
+                <Link to={`/projects/${project?.id}`} className="group block">
                   <div className="relative bg-[#14141A] rounded-2xl border border-white/[0.08] overflow-hidden hover:border-[#4DA3FF]/30 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_0_40px_rgba(77,163,255,0.08)]">
                     <div className="relative aspect-[16/10] overflow-hidden">
                       <ImageWithFallback
-                        src={project.image}
-                        alt={project.title}
+                        src={project?.image}
+                        alt={project?.title}
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-[#0B0B0F]/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
@@ -42,13 +42,13 @@ export function Projects() {
                     </div>
                     <div className="p-6">
                       <h3 className="text-white mb-2" style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 600, fontSize: "1.125rem" }}>
-                        {project.title}
+                        {project?.title}
                       </h3>
                       <p className="text-[#9CA3AF] mb-4" style={{ fontFamily: "'Inter', sans-serif", fontSize: "0.875rem", lineHeight: 1.6 }}>
-                        {project.shortDesc}
+                        {project?.shortDesc}
                       </p>
                       <div className="flex flex-wrap gap-2">
-                        {project.tags.map((tag) => (
+                        {project?.tags.map((tag) => (
                           <span key={tag} className="px-3 py-1 rounded-lg bg-white/[0.05] text-[#9CA3AF] border border-white/[0.06]" style={{ fontFamily: "'Inter', sans-serif", fontSize: "0.75rem" }}>
                             {tag}
                           </span>
