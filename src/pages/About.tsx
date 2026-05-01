@@ -1,7 +1,7 @@
 import { motion } from "motion/react";
 import { SectionReveal } from "../components/SectionReveal";
 import { experience } from "../lib/data";
-import { ImageWithFallback } from "../components/figma/ImageWithFallback";
+import { ImageWithFallback } from "../components/ui/ImageWithFallback";
 
 const techBadges = [
     "React",

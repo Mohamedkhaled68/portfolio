@@ -17,6 +17,7 @@ export const projects = [
             "Sub-1.5s page load time",
         ],
         timeline: "6 months",
+        projectUrl: "https://ksadonatella.tech",
     },
 
     ,
@@ -37,6 +38,7 @@ export const projects = [
             "Growing community of design learners",
         ],
         timeline: "2 months",
+        projectUrl: "https://learn2ux.com",
     },
 
     {
@@ -56,6 +58,7 @@ export const projects = [
             "Seamless story personalization flow",
         ],
         timeline: "7 months",
+        projectUrl: "https://amenstories.com",
     },
 
     {
@@ -81,13 +84,14 @@ export const projects = [
             "500+ partner schools onboarded",
         ],
         timeline: "2 months",
+        projectUrl: "https://masar.work",
     },
 
     {
         id: "antje-k-art",
         title: "Antje-K Art",
         description:
-            "A minimalist and elegant online gallery for German artist Antje Krüger, showcasing her original fine art works — primarily mixed-media pieces on canvas. The site presents her portfolio in a clean, gallery-style layout with individual work pages, detailed dimensions and medium info, a curated gallery view, an about section, and a direct contact link — giving collectors and admirers an intimate digital encounter with her art.",
+            "A minimalist and elegant online gallery showcasing original fine art works — primarily mixed-media pieces on canvas. The site presents the portfolio in a clean, gallery-style layout with individual work pages, detailed dimensions and medium info, a curated gallery view, and a direct contact link — giving collectors and admirers an intimate digital encounter with the art.",
         shortDesc: "Fine art portfolio & gallery for visual artist",
         image: "/images/antje-k/antje-1.png",
         tags: ["React", "Next.js", "Tailwind CSS", "Portfolio"],
@@ -100,6 +104,7 @@ export const projects = [
             "Full artwork catalog with dimensions & medium",
         ],
         timeline: "1 month",
+        projectUrl: "https://www.antje-k.art/",
     },
 ];
 
@@ -109,17 +114,23 @@ export const skills = {
         { name: "Next.js", desc: "Full-stack React framework" },
         { name: "TypeScript", desc: "Type-safe JavaScript" },
         { name: "JavaScript", desc: "ES6+ & modern patterns" },
+        { name: "Zustand", desc: "Lightweight global state" },
+        { name: "TanStack Query", desc: "Server state & data fetching" },
+        { name: "Redux Toolkit", desc: "Scalable state architecture" },
     ],
     "UI Development": [
         { name: "HTML5", desc: "Semantic & accessible markup" },
         { name: "CSS3", desc: "Modern layouts & animations" },
         { name: "TailwindCSS", desc: "Utility-first styling" },
-        { name: "Sass", desc: "Advanced CSS preprocessing" },
+        { name: "Shadcn UI", desc: "Accessible component library" },
     ],
-    Tools: [
+    "Tools & Backend": [
         { name: "Git", desc: "Version control & collaboration" },
-        { name: "Webpack", desc: "Module bundling & optimization" },
         { name: "Vite", desc: "Next-gen build tooling" },
+        { name: "Vercel", desc: "Cloud deployment platform" },
+        { name: "Supabase", desc: "Open-source Firebase alternative" },
+        { name: "Express.js", desc: "Node.js backend framework" },
+        { name: "MongoDB", desc: "NoSQL database" },
     ],
 };
 

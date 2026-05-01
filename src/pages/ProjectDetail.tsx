@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 import { ArrowLeft } from "lucide-react";
 import { SectionReveal } from "../components/SectionReveal";
 import { projects } from "../lib/data";
-import { ImageWithFallback } from "../components/figma/ImageWithFallback";
+import { ImageWithFallback } from "../components/ui/ImageWithFallback";
 
 export function ProjectDetail() {
     const { id } = useParams();
@@ -89,6 +89,21 @@ export function ProjectDetail() {
                                 </span>
                             ))}
                         </div>
+
+                        {project.projectUrl && (
+                            <a
+                                href={project.projectUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-block px-6 py-3 bg-gradient-to-r from-[#4DA3FF] to-[#6C5CFF] text-white rounded-lg font-medium hover:opacity-90 transition-opacity mb-5"
+                                style={{
+                                    fontFamily: "'Inter', sans-serif",
+                                    fontSize: "0.9375rem",
+                                }}
+                            >
+                                View Project →
+                            </a>
+                        )}
                     </motion.div>
 
                     <motion.div
@@ -108,40 +123,57 @@ export function ProjectDetail() {
             </section>
 
             {/* Overview */}
-            <section className="py-16">
-                <div className="max-w-[1320px] mx-auto px-6 grid md:grid-cols-3 gap-8">
-                    {[
-                        { label: "Role", value: project.role },
-                        { label: "Problem", value: project.problem },
-                        { label: "Timeline", value: project.timeline },
-                    ].map((item, i) => (
-                        <SectionReveal key={item.label} delay={i * 0.1}>
-                            <div className="bg-[#14141A] rounded-2xl border border-white/[0.08] p-8">
-                                <h3
-                                    className="text-[#9CA3AF] mb-2"
-                                    style={{
-                                        fontFamily: "'Inter', sans-serif",
-                                        fontSize: "0.8125rem",
-                                        fontWeight: 500,
-                                        textTransform: "uppercase",
-                                        letterSpacing: "0.08em",
-                                    }}
-                                >
-                                    {item.label}
-                                </h3>
-                                <p
-                                    className="text-white"
-                                    style={{
-                                        fontFamily: "'Inter', sans-serif",
-                                        fontSize: "0.9375rem",
-                                        lineHeight: 1.6,
-                                    }}
-                                >
-                                    {item.value}
-                                </p>
-                            </div>
-                        </SectionReveal>
-                    ))}
+            <section className="py-10">
+                <div className="max-w-[1320px] mx-auto px-6">
+                    <div className="relative space-y-8">
+                        {[
+                            { label: "Role", value: project.role, icon: "👤" },
+                            {
+                                label: "Problem",
+                                value: project.problem,
+                                icon: "⚡",
+                            },
+                            {
+                                label: "Timeline",
+                                value: project.timeline,
+                                icon: "⏱️",
+                            },
+                        ].map((item, i) => (
+                            <SectionReveal key={item.label} delay={i * 0.15}>
+                                <div className="flex gap-6">
+                                    <div className="text-3xl pt-2">
+                                        {item.icon}
+                                    </div>
+                                    <div className="flex-1 bg-[#14141A] rounded-2xl border border-white/[0.08] p-8">
+                                        <h3
+                                            className="text-[#9CA3AF] mb-4"
+                                            style={{
+                                                fontFamily:
+                                                    "'Inter', sans-serif",
+                                                fontSize: "0.8125rem",
+                                                fontWeight: 500,
+                                                textTransform: "uppercase",
+                                                letterSpacing: "0.08em",
+                                            }}
+                                        >
+                                            {item.label}
+                                        </h3>
+                                        <p
+                                            className="text-white"
+                                            style={{
+                                                fontFamily:
+                                                    "'Inter', sans-serif",
+                                                fontSize: "0.9375rem",
+                                                lineHeight: 1.6,
+                                            }}
+                                        >
+                                            {item.value}
+                                        </p>
+                                    </div>
+                                </div>
+                            </SectionReveal>
+                        ))}
+                    </div>
                 </div>
             </section>
 
@@ -163,7 +195,7 @@ export function ProjectDetail() {
                     <div className="grid md:grid-cols-3 gap-6">
                         {project.results.map((result, i) => (
                             <SectionReveal key={i} delay={i * 0.1}>
-                                <div className="bg-[#14141A] rounded-2xl border border-white/[0.08] p-8 text-center">
+                                <div className="bg-[#14141A] rounded-2xl border border-white/[0.08] p-8 text-center h-full flex items-center justify-center">
                                     <div
                                         className="bg-gradient-to-r from-[#4DA3FF] to-[#6C5CFF] bg-clip-text text-transparent"
                                         style={{

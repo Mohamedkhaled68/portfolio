@@ -10,7 +10,7 @@ import {
 } from "lucide-react";
 import { SectionReveal } from "../components/SectionReveal";
 import { projects, skills } from "../lib/data";
-import { ImageWithFallback } from "../components/figma/ImageWithFallback";
+import { ImageWithFallback } from "../components/ui/ImageWithFallback";
 
 const categoryIcons: Record<string, typeof Code> = {
     "Front-End Development": Code,
@@ -206,7 +206,8 @@ export function Home() {
                                             passion:
                                         </span>{" "}
                                         <span className="text-[#27C93F]">
-                                            "Crafting beautiful UIs and high-performance applications"
+                                            "Crafting beautiful UIs and
+                                            high-performance applications"
                                         </span>
                                         ,{"\n"}
                                         {"  "}
@@ -277,7 +278,7 @@ export function Home() {
                                         key={category}
                                         delay={catIdx * 0.1}
                                     >
-                                        <div className="group bg-[#14141A] rounded-2xl border border-white/[0.08] p-8 hover:border-[#4DA3FF]/30 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_0_40px_rgba(77,163,255,0.08)]">
+                                        <div className="group h-full bg-[#14141A] rounded-2xl border border-white/[0.08] p-8 hover:border-[#4DA3FF]/30 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_0_40px_rgba(77,163,255,0.08)]">
                                             <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#4DA3FF]/20 to-[#6C5CFF]/20 flex items-center justify-center mb-6">
                                                 <Icon
                                                     size={22}
@@ -362,9 +363,9 @@ export function Home() {
                             <SectionReveal key={project?.id} delay={i * 0.1}>
                                 <Link
                                     to={`/projects/${project?.id}`}
-                                    className="group block"
+                                    className="group block h-full"
                                 >
-                                    <div className="relative bg-[#14141A] rounded-2xl border border-white/[0.08] overflow-hidden hover:border-[#4DA3FF]/30 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_0_40px_rgba(77,163,255,0.08)]">
+                                    <div className="relative bg-[#14141A] h-full rounded-2xl border border-white/[0.08] overflow-hidden hover:border-[#4DA3FF]/30 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_0_40px_rgba(77,163,255,0.08)]">
                                         <div className="aspect-[16/10] overflow-hidden">
                                             <ImageWithFallback
                                                 src={project?.image}
