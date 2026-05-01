@@ -119,7 +119,7 @@ export function Home() {
                                 />
                             </Link>
                             <a
-                                href="https://drive.google.com/file/d/1sweocMnULn8zL2Xu8qc0NR1Ja_75w_1F/view?usp=drive_link"
+                                href="https://drive.google.com/file/d/1bfD-Dxnc9AyfY4q--jdl5_YTU75rV6Vn/view?usp=sharing"
                                 target="_blank"
                                 className="flex items-center gap-2 px-6 py-3 rounded-xl border border-white/[0.12] text-white hover:bg-white/[0.05] transition-all duration-300"
                                 style={{
