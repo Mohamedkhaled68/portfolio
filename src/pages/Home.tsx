@@ -238,7 +238,7 @@ export function Home() {
                 <motion.div
                     animate={{ y: [0, 8, 0] }}
                     transition={{ duration: 2, repeat: Infinity }}
-                    className="absolute bottom-8 left-1/2 -translate-x-1/2 text-[#9CA3AF] z-50"
+                    className="absolute bottom-8 left-1/2 -translate-x-1/2 text-[#9CA3AF] z-40"
                 >
                     <a
                         href="#skills"
