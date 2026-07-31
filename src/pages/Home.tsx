@@ -119,7 +119,7 @@ export function Home() {
                                 />
                             </Link>
                             <a
-                                href="https://drive.google.com/file/d/1mk-EjpP-4You1AU8hsqD-ubTtO9k4lnh/view?usp=sharing"
+                                href="https://flowcv.com/resume/76esk441qbn1"
                                 target="_blank"
                                 className="flex items-center gap-2 px-6 py-3 rounded-xl border border-white/[0.12] text-white hover:bg-white/[0.05] transition-all duration-300"
                                 style={{
